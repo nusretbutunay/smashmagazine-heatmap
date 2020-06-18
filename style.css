@@ -17,6 +17,7 @@
 body {
   background-color: gray;
 }
+
 a {
   text-decoration: none;
   display: block;
@@ -33,14 +34,12 @@ li {
 header {
   align-items: center;
   justify-content: space-between;
-
   padding: 1.5rem 2rem;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.75);
 }
 
 .logo {
   flex: 1;
-
   height: 4rem;
 }
 
@@ -64,6 +63,7 @@ nav ul {
 .search {
   flex: 2;
 }
+
 .search input {
   border-radius: 0.5rem;
   margin-left: 1.5rem;
@@ -78,6 +78,7 @@ nav ul {
   font-size: 1.4rem;
   padding: 1rem 1.2rem;
 }
+
 .nav-link:hover {
   background: #111;
   border-radius: 0.6rem;
@@ -88,6 +89,45 @@ ul li:last-child a {
   border-radius: 0.6rem;
 }
 
+.call-to-action {
+  margin: 2.5rem;
+  justify-content: flex-end;
+}
+
 .call-wrapper {
-  background: var(--main-text-color);
+  align-items: center;
+  flex-direction: column;
+}
+
+.call-wrapper h1 {
+  text-align: center;
+  background-color: var(--main-text-color);
+  padding: 1rem;
+  box-shadow: 0 200px 171 -92px rgba(0, 0, 0, 0.75);
+}
+
+.seriously {
+  margin-left: 15rem;
+  border: 2px dotted black;
+  height: 70px;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.seriously div {
+  width: 50px;
+  height: 50px;
+  border-radius: 1rem;
+  background-color: var(--main-text-color);
+}
+
+.seriously button {
+  margin-left: 1rem;
+  background-color: gray;
+  border: 1px solid white;
+  height: 40px;
+  padding: 1rem 1.2rem 2.2rem 1.5rem;
+  font-size: 1.2rem;
+  color: var(--main-text-color);
+  border-radius: 1rem;
 }
