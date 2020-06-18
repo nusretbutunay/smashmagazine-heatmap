@@ -26,6 +26,7 @@ a {
 li {
   list-style: none;
 }
+
 h1,
 h2,
 h3,
@@ -43,7 +44,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 2rem;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.75);
 }
 
 .logo {
@@ -75,7 +75,7 @@ nav ul {
 .search input {
   border-radius: 0.5rem;
   margin-left: 1.5rem;
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
   border: 0;
   color: #555;
   font-size: 1.3rem;
@@ -90,6 +90,11 @@ nav ul {
 .nav-link:hover {
   background: #111;
   border-radius: 0.6rem;
+}
+
+.main-article a {
+  clear: both;
+  padding: 3rem 0;
 }
 
 ul li:last-child a {
@@ -145,19 +150,59 @@ ul li:last-child a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: var(--main-text-color);
+  box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.75);
 }
+
 .main-article {
-  border: 1px solid green;
   padding: 7rem 3rem 0 3rem;
+}
+
+.main-article:nth-child(1) {
+  background-color: #999;
+}
+
+.main-article:nth-child(2) {
+  background-color: #888;
+}
+
+.main-article:nth-child(3) {
+  background-color: #aaa;
+}
+
+.main-article:nth-child(4) {
+  background-color: #ccc;
 }
 
 .author {
   align-items: center;
+  margin-bottom: 1.5rem;
 }
+
 .author p {
   margin-left: 1rem;
 }
+
 .author p span {
   font-weight: 300;
   font-size: 0.9rem;
 }
+
+.main-article h2 {
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  width: 30rem;
+}
+
+.main-article h2 span {
+  font-size: 0.9rem;
+}
+
+.tags p {
+  float: left;
+  margin-right: 2rem;
+}
+
+.main-article a img {
+  width: 30px;
+}
+
