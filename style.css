@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0300,400;1,700&display=swap");
 
 :root {
-  --main-background-color: rgba(0, 0, 0, 0.7);
+  --main-background-color: rgba(0, 0, 0, 0.6);
   --main-text-color: #fff;
   --secondary-text-color: grey;
 }
@@ -43,9 +43,18 @@ h6 {
   display: flex;
 }
 
+.text-align-left {
+  text-align: left !important;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
 .arrow {
   width: 30px;
 }
+
 .clear {
   clear: both;
 }
@@ -126,6 +135,15 @@ nav ul {
   display: inline-block;
   font-size: 1.5rem;
   color: black;
+}
+
+.upcoming a {
+  display: inline;
+  text-decoration: underline;
+}
+
+.see-all a {
+  color: white;
 }
 
 .bottom-article p a {
@@ -270,6 +288,26 @@ ul li:last-child a {
   border-radius: 50%;
 }
 
+.upcoming img {
+  border-radius: 50%;
+}
+
+.person-of-week img {
+  float: left;
+  margin-right: 4rem;
+}
+
+.more-article img {
+  height: 5rem;
+  width: 6rem;
+  margin-right: 3rem;
+}
+
+.design-system-section img {
+  position: relative;
+  top: -5rem;
+}
+
 .bottom-article a img {
   margin: 4rem 0 1rem 0;
 }
@@ -295,6 +333,14 @@ ul li:last-child a {
   padding: 2rem;
 }
 
+.upcoming * {
+  margin-bottom: 2rem;
+}
+
+.click * {
+  margin-bottom: 2rem;
+}
+
 .supporters div * {
   margin-bottom: 1rem;
 }
@@ -307,6 +353,34 @@ ul li:last-child a {
   border-radius: 0.7rem;
   padding: 1rem 1.5rem;
   border: 0;
+}
+
+.upcoming button {
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  padding: 0.7rem;
+  border: 0;
+  font-size: 0.7rem;
+}
+
+.click button {
+  display: block;
+  margin: 2rem auto;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  padding: 0.7rem;
+  border: 0;
+  font-size: 0.7rem;
+}
+
+.design-system-section button {
+  display: block;
+  margin: 2rem 0;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  padding: 0.7rem;
+  border: 0;
+  font-size: 0.7rem;
 }
 
 .supporters div button {
@@ -345,29 +419,8 @@ ul li:last-child a {
   text-align: center;
 }
 
-.upcoming * {
-  margin-bottom: 2rem;
-}
-
-.upcoming img {
-  border-radius: 50%;
-}
-
 .upcoming h3 {
   font-size: 2rem;
-  text-decoration: underline;
-}
-
-.upcoming button {
-  border-radius: 0.4rem;
-  text-transform: uppercase;
-  padding: 0.7rem;
-  border: 0;
-  font-size: 0.7rem;
-}
-
-.upcoming a {
-  display: inline;
   text-decoration: underline;
 }
 
@@ -377,10 +430,6 @@ ul li:last-child a {
   margin: 2rem auto;
   border-bottom: 4px solid black;
   text-transform: uppercase;
-}
-
-.see-all a {
-  color: white;
 }
 
 .see-all a:hover {
@@ -393,26 +442,12 @@ ul li:last-child a {
   padding: 4rem 16rem;
 }
 
-.click * {
-  margin-bottom: 2rem;
-}
-
 .click h3 {
   text-transform: uppercase;
 }
 
 .click h1 {
   font-size: 2.4rem;
-}
-
-.click button {
-  display: block;
-  margin: 2rem auto;
-  border-radius: 0.4rem;
-  text-transform: uppercase;
-  padding: 0.7rem;
-  border: 0;
-  font-size: 0.7rem;
 }
 
 .more-articles-container {
@@ -427,19 +462,10 @@ ul li:last-child a {
 .more-articles-container > h4 {
   position: absolute;
 }
+
 .person-of-week {
   grid-column: 1 / -1;
   margin: 1.5rem 0 10rem 0;
-}
-
-.person-of-week img {
-  float: left;
-  margin-right: 4rem;
-}
-.more-article img {
-  height: 5rem;
-  width: 6rem;
-  margin-right: 3rem;
 }
 
 .design-system-section {
@@ -447,16 +473,87 @@ ul li:last-child a {
   padding: 1.8rem 2.5rem;
   justify-content: space-around;
 }
-.design-system-section button {
-  display: block;
+
+.newsletter {
+  background-color: #bbb;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.newsletter form {
   margin: 2rem 0;
-  border-radius: 0.4rem;
-  text-transform: uppercase;
-  padding: 0.7rem;
-  border: 0;
-  font-size: 0.7rem;
+  font-size: 0;
 }
-.design-system-section img {
+
+.newsletter form input:first-child {
+  padding: 1rem 2rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 7px 15px -2px #000;
+}
+
+.newsletter form input:last-child {
+  padding: 1rem 2rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #777;
+  box-shadow: 0 7px 15px -2px #000;
+}
+
+.newsletter div {
+  width: 80%;
+  margin: 0  auto;
+  background-color: #666;
+  border-radius: 5px;
+  color: white;
+}
+
+footer {
+  flex-direction: column;
+  align-items: center;
+  background-color: #444;
+}
+
+footer  * {
+  margin-bottom: 1.4rem;
+}
+
+.footer-links {
+  justify-content: space-around;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  margin-right: 1rem;
+  text-transform: capitalize;
+  color: white;
+}
+
+.footer-links a::before {
+  content: "*";
   position: relative;
-  top: -5rem;
+  left: -5px;
 }
+
+.footer-links a:hover {
+  color: black;
+}
+
+footer p {
+  width: 30%;
+}
+
+.bottom-links {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 2rem;
+  align-items: flex-start;
+}
+
