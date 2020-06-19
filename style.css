@@ -167,6 +167,12 @@ nav {
   color: var(--main-text-color);
 }
 
+.footer-links a {
+  margin-right: 1rem;
+  text-transform: capitalize;
+  color: var(--main-text-color);
+}
+
 .bottom-article p a {
   color: gray;
 }
@@ -243,6 +249,10 @@ ul li:last-child a {
 
 .author {
   margin-bottom: 1.5rem;
+}
+
+footer p {
+  width: 30%;
 }
 
 .author p {
@@ -424,7 +434,7 @@ ul li:last-child a {
   padding: 4rem 16rem;
 }
 
-.click h1 {
+.click h2 {
   font-size: 2.4rem;
 }
 
@@ -494,19 +504,9 @@ footer {
   background-color: #444;
 }
 
-footer * {
-  margin-bottom: 1.4rem;
-}
-
 .footer-links {
   width: 70%;
   flex-wrap: wrap;
-}
-
-.footer-links a {
-  margin-right: 1rem;
-  text-transform: capitalize;
-  color: var(--main-text-color);
 }
 
 .footer-links a::before {
@@ -519,18 +519,16 @@ footer * {
   color: var(--black);
 }
 
-footer p {
-  width: 30%;
-}
-
 .bottom-links {
   width: 60%;
 }
+
 .bottom-links div {
   margin: 0 2rem;
   width: 70%;
   flex-wrap: wrap;
 }
+
 .fixed-btn {
   position: fixed;
   right: 2rem;

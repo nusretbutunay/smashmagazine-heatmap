@@ -19,8 +19,10 @@ This project consists of building a heatmap of the Smashing magazine website
 
 ## Getting Started
 
-​
-**To view this project, download the contents of the repository to your computer or clone the repository and open the index.html file using your preferred browser.**
+To get a local copy of the repository please run the following commands on your terminal:
+
+$ cd <folder>
+$ git clone https://github.com/nusretbutunay/smashmagazine-heatmap.git
 ​
 
 ## Authors
@@ -35,7 +37,13 @@ This project consists of building a heatmap of the Smashing magazine website
 
 - Linkedin: [Maryjane Akpagbue](https://www.linkedin.com/in/maryjane-akpagbue-1500b7173/)
   ​
+  👤 **Nusret**
   ​
+- Github: [@Nusret](https://github.com/nusretbutunay)
+
+- Twitter: [@Nusret](https://twitter.com/nusretbutunay)
+
+- Linkedin: [Nusret Butunay](https://www.linkedin.com/in/nusretbutunay)
 
 ## �� Contributing
 
