@@ -3,6 +3,7 @@
 :root {
   --main-background-color: rgba(0, 0, 0, 0.6);
   --main-text-color: #fff;
+  --black: #000;
   --secondary-text-color: grey;
 }
 
@@ -53,6 +54,10 @@ h6 {
 
 .text-align-center {
   text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .arrow {
@@ -155,11 +160,11 @@ nav {
   margin-bottom: 1rem;
   display: inline-block;
   font-size: 1.5rem;
-  color: black;
+  color: var(--black);
 }
 
 .see-all a {
-  color: var(--main-text-color)
+  color: var(--main-text-color);
 }
 
 .bottom-article p a {
@@ -188,7 +193,7 @@ ul li:last-child a {
 
 .seriously {
   margin-left: 15rem;
-  border: 2px dotted black;
+  border: 2px dotted var(--black);
   height: 70px;
   padding: 0 1rem;
 }
@@ -352,7 +357,6 @@ ul li:last-child a {
 }
 
 .upcoming button {
-  text-transform: uppercase;
   padding: 0.7rem;
   font-size: 0.7rem;
 }
@@ -360,7 +364,6 @@ ul li:last-child a {
 .click button {
   display: block;
   margin: 2rem auto;
-  text-transform: uppercase;
   padding: 0.7rem;
   font-size: 0.7rem;
 }
@@ -368,14 +371,12 @@ ul li:last-child a {
 .design-system-section button {
   display: block;
   margin: 2rem 0;
-  text-transform: uppercase;
   padding: 0.7rem;
   border: 0;
   font-size: 0.7rem;
 }
 
 .supporters div button {
-  text-transform: uppercase;
   padding: 0.7rem;
   border: 0;
   font-size: 0.7rem;
@@ -411,8 +412,7 @@ ul li:last-child a {
 .see-all-links {
   width: 11%;
   margin: 2rem auto;
-  border-bottom: 4px solid black;
-  text-transform: uppercase;
+  border-bottom: 4px solid var(--black);
 }
 
 .see-all a:hover {
@@ -424,10 +424,6 @@ ul li:last-child a {
   padding: 4rem 16rem;
 }
 
-.click h3 {
-  text-transform: uppercase;
-}
-
 .click h1 {
   font-size: 2.4rem;
 }
@@ -435,7 +431,8 @@ ul li:last-child a {
 .more-articles-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  column-gap: 2rem;
+  row-gap: 1rem;
   position: relative;
   padding: 3rem;
   background: #fdfdfd;
@@ -471,7 +468,7 @@ ul li:last-child a {
   border-bottom-left-radius: 5px;
   border: none;
   outline: none;
-  box-shadow: 0 7px 15px -2px #000;
+  box-shadow: 0 7px 15px -2px var(--black);
 }
 
 .newsletter form input:last-child {
@@ -481,7 +478,7 @@ ul li:last-child a {
   border: none;
   outline: none;
   background-color: #777;
-  box-shadow: 0 7px 15px -2px #000;
+  box-shadow: 0 7px 15px -2px var(--black);
 }
 
 .newsletter div {
@@ -489,7 +486,7 @@ ul li:last-child a {
   margin: 0 auto;
   background-color: #666;
   border-radius: 5px;
-  color: var(--main-text-color)
+  color: var(--main-text-color);
 }
 
 footer {
@@ -509,7 +506,7 @@ footer * {
 .footer-links a {
   margin-right: 1rem;
   text-transform: capitalize;
-  color: var(--main-text-color)
+  color: var(--main-text-color);
 }
 
 .footer-links a::before {
@@ -519,7 +516,7 @@ footer * {
 }
 
 .footer-links a:hover {
-  color: black;
+  color: var(--black);
 }
 
 footer p {
