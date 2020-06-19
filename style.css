@@ -84,9 +84,12 @@ header {
   height: 100%;
 }
 
-.author-image {
+.rotate-hover {
   transform: rotate(-20deg);
   border-radius: 1rem;
+}
+.rotate-hover:hover {
+  transform: rotate(0deg);
 }
 
 nav {
@@ -507,7 +510,7 @@ ul li:last-child a {
 
 .newsletter div {
   width: 80%;
-  margin: 0  auto;
+  margin: 0 auto;
   background-color: #666;
   border-radius: 5px;
   color: white;
@@ -519,7 +522,7 @@ footer {
   background-color: #444;
 }
 
-footer  * {
+footer * {
   margin-bottom: 1.4rem;
 }
 
@@ -536,7 +539,7 @@ footer  * {
 }
 
 .footer-links a::before {
-  content: "*";
+  content: "•";
   position: relative;
   left: -5px;
 }
@@ -550,10 +553,19 @@ footer p {
 }
 
 .bottom-links {
+  width: 60%;
+}
+.bottom-links div {
+  margin: 0 2rem;
+  width: 70%;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 50%;
-  margin: 0 2rem;
-  align-items: flex-start;
 }
-
+.fixed-btn {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  padding: 1rem 1.2rem;
+  border: 0;
+  background-color: #eee;
+}
