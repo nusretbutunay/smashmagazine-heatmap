@@ -17,6 +17,7 @@
 
 body {
   background-color: var(--main-background-color);
+  line-height: 1.8rem;
 }
 
 a {
@@ -35,6 +36,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 1.5rem;
+  line-height: 2.5rem;
 }
 
 .flex-container {
@@ -249,7 +251,7 @@ ul li:last-child a {
 }
 
 .bottom-article:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
   transition: all 0.5s ease-in-out;
   background-color: #fff;
 }
@@ -264,4 +266,61 @@ ul li:last-child a {
 
 .bottom-article:hover .bottom-article .arrow {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.supporters p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.supporters div {
+  background: #666;
+  border-radius: 1rem;
+  margin: 0.8rem 1.2rem 0 0;
+  text-align: center;
+  padding: 2rem;
+}
+.supporters div * {
+  margin-bottom: 1rem;
+}
+
+#grammarly {
+  width: 15rem;
+}
+.supporters div button {
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  padding: 0.7rem;
+  border: 0;
+  font-size: 0.7rem;
+}
+
+.features {
+  padding: 2rem;
+  background: #aaa;
+  border-radius: 0.7rem;
+  text-align: center;
+}
+.features * {
+  margin-bottom: 1.3rem;
+}
+.features img {
+  border-radius: 50%;
+}
+.features h3 {
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+.features button {
+  border-radius: 0.7rem;
+  padding: 1rem 1.5rem;
+  border: 0;
+}
+.features p:first-child {
+  font-size: 1.1rem;
+}
+.features p:last-child {
+  font-size: 0.7rem;
+}
+.features p a {
+  display: inline;
 }
