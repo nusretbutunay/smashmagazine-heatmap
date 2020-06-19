@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0300,400;1,700&display=swap");
 
 :root {
+  --main-background-color: rgba(0, 0, 0, 0.7);
   --main-text-color: #fff;
   --secondary-text-color: grey;
 }
@@ -15,7 +16,7 @@
 }
 
 body {
-  background-color: gray;
+  background-color: var(--main-background-color);
 }
 
 a {
@@ -38,6 +39,10 @@ h6 {
 
 .flex-container {
   display: flex;
+}
+
+.arrow {
+  width: 30px;
 }
 
 header {
@@ -100,6 +105,18 @@ nav ul {
 .main-article a {
   clear: both;
   padding: 3rem 0;
+}
+
+.bottom-article > a {
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.bottom-article p a {
+  color: gray;
+  text-decoration: underline;
 }
 
 ul li:last-child a {
@@ -207,6 +224,44 @@ ul li:last-child a {
   margin-right: 2rem;
 }
 
-.main-article a img {
-  width: 30px;
+.bottom-article-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  padding: 1.5rem 3rem 0 3rem;
+  margin-bottom: 15rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bottom-article-container > p {
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  height: 100%;
+  left: 1rem;
+  top: -4rem;
+}
+
+.bottom-article {
+  cursor: pointer;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.bottom-article:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+}
+
+.bottom-article * {
+  margin-bottom: 2rem;
+}
+
+.bottom-article a img {
+  margin: 4rem 0 1rem 0;
+}
+
+.bottom-article:hover .bottom-article .arrow {
+  background-color: rgba(0, 0, 0, 0.7);
 }
