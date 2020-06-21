@@ -73,7 +73,7 @@ h6 {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   height: 100%;
-  left: 1rem;
+  left: 0.4rem;
   top: -4rem;
 }
 
@@ -448,12 +448,8 @@ footer p {
   column-gap: 2rem;
   row-gap: 1rem;
   position: relative;
-  padding: 3rem;
+  padding: 4rem;
   background: #fdfdfd;
-}
-
-.more-articles-container > h4 {
-  position: absolute;
 }
 
 .person-of-week {
