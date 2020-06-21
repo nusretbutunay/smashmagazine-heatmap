@@ -2,6 +2,13 @@
 
 This project consists of building a heatmap of the Smashing magazine website
 
+In this project:
+
+  1. Float, flex and grid properties used to align elements on the page
+  2. Variations of gray colors used
+  3. Box Show property used to give contrast look on the page
+  4. Transform property used to rotate the images on the page
+
 ![screenshot](/img/heatmap.png)
 ​​
 
@@ -36,6 +43,7 @@ $ git clone https://github.com/nusretbutunay/smashmagazine-heatmap.git
 - Twitter: [@AlfredMaryjane](https://twitter.com/AlfredMaryjane)
 
 - Linkedin: [Maryjane Akpagbue](https://www.linkedin.com/in/maryjane-akpagbue-1500b7173/)
+
   ​
   👤 **Nusret**
   ​

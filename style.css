@@ -83,6 +83,7 @@ h6 {
 
 header {
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 1.5rem 2rem;
 }
 
@@ -92,12 +93,13 @@ header {
 }
 
 .logo img {
-  width: 200px;
+  width: 15vw;
   height: 100%;
 }
 
 .rotate-hover {
   transform: rotate(-20deg);
+  transition: all 0.5s ease-in-out;
 }
 
 .rotate-hover:hover {
@@ -134,10 +136,12 @@ nav {
 }
 
 .search input {
-  margin-left: 1.5rem;
-  padding: 1rem 2rem;
+  margin-left: 1vw;
+  padding: 1vh 1vw;
   color: #555;
   font-size: 1.3rem;
+  border: none;
+  width: 20vw;
 }
 
 .nav-link {
@@ -189,6 +193,7 @@ ul li:last-child a {
 
 .call-wrapper {
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .call-wrapper h1 {
@@ -222,7 +227,7 @@ ul li:last-child a {
 
 .article-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 50% 50%;
   color: var(--main-text-color);
   box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.75);
 }
@@ -267,7 +272,6 @@ footer p {
 .main-article h2 {
   font-size: 2.5rem;
   padding: 2rem 0;
-  width: 30rem;
 }
 
 .main-article h2 span {
@@ -536,4 +540,5 @@ footer {
   padding: 1rem 1.2rem;
   border: 0;
   background-color: #eee;
+  cursor: pointer;
 }
