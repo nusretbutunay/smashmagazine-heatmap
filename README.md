@@ -34,9 +34,7 @@ $ git clone https://github.com/nusretbutunay/smashmagazine-heatmap.git
 
 ## Authors
 
-​
 👤 **Maryjane**
-​
 
 - Github: [@maryjane](https://github.com/maryjanee)
 
@@ -44,20 +42,20 @@ $ git clone https://github.com/nusretbutunay/smashmagazine-heatmap.git
 
 - Linkedin: [Maryjane Akpagbue](https://www.linkedin.com/in/maryjane-akpagbue-1500b7173/)
 
-  ​
-  👤 **Nusret**
-  ​
+
+👤 **Nusret**
+
 - Github: [@Nusret](https://github.com/nusretbutunay)
 
 - Twitter: [@Nusret](https://twitter.com/nusretbutunay)
 
 - Linkedin: [Nusret Butunay](https://www.linkedin.com/in/nusretbutunay)
 
+
 ## �� Contributing
 
-​
 Contributions, issues and feature requests are welcome!
-​
+
 
 ## Show your support
 
